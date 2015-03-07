@@ -24,7 +24,7 @@ Works with Play 2.3.8. Should work with older 2.3.x versions, but I'm not sure w
 1. Add a dependency in your sbt build file:
 
     ```
-    "com.github.cb372" %% "play-configurable-ningwsplugin" % "0.1.0"
+    "com.github.cb372" %% "play-configurable-ningwsplugin" % "0.2"
     ```
 
 2. Add the plugin to your `play.plugins` file:
