@@ -17,7 +17,10 @@ object ConfigurableNingWSPluginBuild extends Build {
   lazy val plugin = Project(
     id = "play-configurable-ningwsplugin",
     base = file("."), 
-    settings = Seq(
+    settings = 
+      releaseSettings ++
+      sonatypeSettings ++
+      mavenSettings ++ Seq(
       organization := "com.github.cb372",
       scalaVersion := "2.11.5",
       scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"),
@@ -43,9 +46,7 @@ object ConfigurableNingWSPluginBuild extends Build {
         pushChanges,
         deployToMavenCentral
       )
-    ) ++
-    releaseSettings ++
-    mavenSettings
+    )
   )
 
   lazy val mavenSettings = Seq(
