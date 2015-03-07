@@ -1,5 +1,7 @@
 # play-configurable-ningwsplugin
 
+[![Build Status](https://travis-ci.org/cb372/play-configurable-ningwsplugin.svg?branch=master)](https://travis-ci.org/cb372/play-configurable-ningwsplugin)
+
 A modified version of the standard NingWSPlugin that adds support for the following configuration properties:
 
 ```
