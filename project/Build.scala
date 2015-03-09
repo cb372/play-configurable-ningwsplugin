@@ -23,6 +23,7 @@ object ConfigurableNingWSPluginBuild extends Build {
       mavenSettings ++ Seq(
       organization := "com.github.cb372",
       scalaVersion := "2.11.5",
+      crossScalaVersions := Seq("2.11.5", "2.10.4"),
       scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"),
       resolvers += Resolver.typesafeRepo("releases"),
       libraryDependencies ++= Seq(
