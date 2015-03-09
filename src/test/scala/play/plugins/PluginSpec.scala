@@ -11,9 +11,9 @@ class PluginSpec extends FlatSpec with Matchers with OneAppPerSuite {
   override implicit lazy val app = new FakeApplication(
     additionalPlugins = Seq("play.plugins.ConfigurableNingWSPlugin"),
     additionalConfiguration = Map(
-      "ws.ning.maximumConnectionLifeTime" -> 100,
-      "ws.ning.idleConnectionInPoolTimeout" -> 200,
-      "ws.ning.webSocketIdleTimeout" -> 300
+      ("ws.ning.maximumConnectionLifeTime", 100),
+      ("ws.ning.idleConnectionInPoolTimeout", 200),
+      ("ws.ning.webSocketIdleTimeout", 300)
     )
   )
 
