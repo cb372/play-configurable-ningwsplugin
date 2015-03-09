@@ -19,12 +19,14 @@ ws.ning.webSocketIdleTimeout
 
 Works with Play 2.3.8. Should work with older 2.3.x versions, but I'm not sure when they upgraded the AsyncHttpClient dependency in Play. You might hit issues because some methods were renamed in AsyncHttpClient.
 
+The plugin is published for Scala 2.10 and 2.11.
+
 ## How to use
 
 1. Add a dependency in your sbt build file:
 
     ```
-    "com.github.cb372" %% "play-configurable-ningwsplugin" % "0.2"
+    "com.github.cb372" %% "play-configurable-ningwsplugin" % "0.3"
     ```
 
 2. Add the plugin to your `play.plugins` file:
